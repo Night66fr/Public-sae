@@ -61,7 +61,7 @@ for i in range(int(nb_mesures)):
             }
         })
         
-    if os.path.exists(nom_fichier): #demander à l'IA pour pouvoir enregistrer et que je puisse le voir directement 
+    if os.path.exists(nom_fichier): #demander à l'ia pour pouvoir enregistrer et que je puisse le voir directement 
         with open(nom_fichier, "r", encoding="utf8") as f:
             try:
                 contenu = json.load(f)
@@ -77,4 +77,4 @@ for i in range(int(nb_mesures)):
     print(f"Mesure parking {i+1} enregistrée {temps_actuel}")
 
     if i < nb_mesures - 1:
-        time.sleep(temps_arret_seconde-1)  
+        time.sleep(temps_arret_seconde-1)                                   
