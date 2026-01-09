@@ -2,10 +2,6 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-## Pour commencer
-
-Vous avez 2 fichiers de data, un pour les vélos et un pour les parkings
-
 ### Pré-requis
 
 Ce qu'il est requis pour commencer avec votre projet
@@ -20,14 +16,9 @@ Installer le fichier requirement.txt a l'aide de la commande :
 
 ## Fabriqué avec
 
-Python
-HTML
-CSS 
-Js
-
-_exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
-* [Atom](https://atom.io/) - Editeur de textes
+* [Python](https://www.python.org) - Python
+* [HTML][CSS] - Web
+* [Visual Studio Code](https://code.visualstudio.com) - Editeur de textes
 
 ## Versions
 
