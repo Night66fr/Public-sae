@@ -60,5 +60,3 @@ def matrice(data_liste) :
             temporaire.append(Corvariance(data_liste[i],data_liste[j]))
         resultat.append(temporaire)
     return resultat
-
-
