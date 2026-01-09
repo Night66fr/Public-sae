@@ -11,8 +11,13 @@ Installer le fichier requirement.txt a l'aide de la commande :
 "mettre la commande"
 
 ### Installation
+```bash
+git clone [https://github.com/Night66fr/Public-sae.git](https://github.com/Night66fr/Public-sae.git)
+```
 
-""
+```bash
+pip install -r requirements.txt
+```
 
 ## Fabriqué avec
 
