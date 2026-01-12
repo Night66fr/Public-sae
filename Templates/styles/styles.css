@@ -7,6 +7,9 @@ body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background: #f1f5f9;
+  height: 100vh; /* Utilise toute la hauteur de l'écran */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -16,10 +19,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .container {
   padding: 20px 5%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Empêche le scroll global moche */
 }
 
 .selection-bar {
@@ -30,6 +38,7 @@ header {
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
 }
 
 .select-group {
@@ -37,6 +46,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 select {
   padding: 10px;
   border-radius: 5px;
@@ -48,7 +58,8 @@ select {
   display: grid;
   grid-template-columns: 400px 1fr;
   gap: 20px;
-  height: 550px;
+  flex-grow: 1;
+  min-height: 0; /* Important pour que le contenu puisse se réduire sans couper */
 }
 
 .side-panel {
@@ -59,53 +70,62 @@ select {
 
 .kpi-card {
   background: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   text-align: center;
   border-left: 5px solid var(--accent);
+  flex-shrink: 0;
 }
 
 #map {
-  flex-grow: 1;
   border-radius: 10px;
   border: 1px solid #ddd;
   width: 100%;
-  min-height: 350px;
+  flex-grow: 1; /* La carte prend tout le reste de la place à gauche */
   z-index: 1;
 }
 
 .chart-container {
   background: white;
-  padding: 20px;
+  padding: 30px 20px 20px 20px; /* Plus de padding en haut (30px) pour ne pas couper le titre/graph */
   border-radius: 10px;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
+#chart-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+/* Le canvas doit être dans un conteneur qui limite sa croissance pour rester net */
 canvas {
   width: 100% !important;
   height: 100% !important;
+  max-height: calc(100vh - 350px); /* S'adapte dynamiquement à l'écran */
 }
 
 .corr-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  font-family: sans-serif;
 }
+
 .corr-table th {
   background: #1e293b;
   color: white;
   padding: 12px;
   text-align: left;
 }
+
 .corr-table td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
-.corr-table tr:nth-child(even) {
-  background: #f8fafc;
-}
+
 .score-badge {
   background: #f97316;
   color: white;
