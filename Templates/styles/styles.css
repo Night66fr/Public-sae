@@ -133,3 +133,17 @@ canvas {
   border-radius: 4px;
   font-weight: bold;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#header-logo {
+  height: 40px; 
+  width: auto;
+  object-fit: contain;
+}
