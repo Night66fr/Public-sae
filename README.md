@@ -2,6 +2,10 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
+### Site Web Disponible !
+Publier sur un site tier gratuit il faut donc souvent ne pas avoir de dns ou vpn actif pour y accéder :
+https://data-montpellier-lachaud-place.vercel.app
+
 ### Installation
 Cloner d'abord le projet avec cette commande dans votre terminal :
 ```bash
