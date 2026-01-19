@@ -24,11 +24,6 @@ pip install -r requirements.txt
 * [HTML] et [CSS] - Web
 * [Visual Studio Code](https://code.visualstudio.com) - Editeur de textes
 
-## Versions
-
-**Dernière version stable :** 
-**Dernière version :** 
-Liste des versions : [Cliquer pour afficher](https://github.com/Night66fr/Public-sae/tags)
 
 ## Auteurs
 
